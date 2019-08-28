@@ -18,3 +18,18 @@
         <img src="http://img.shields.io/badge/swift-4.1-brightgreen.svg" alt="Swift 4.1">
     </a>
 </p>
+
+
+# Usage
+
+If Vapor is not installed
+
+```
+brew tap vapor/tap
+brew install vapor/tap/vapor
+```
+
+Clone this repository enter in folder and run: 
+
+```vapor update -y ```
+
