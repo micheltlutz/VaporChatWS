@@ -31,8 +31,8 @@ public func sockets(_ websockets: NIOWebSocketServer) {
         
         ws.onBinary { ws, object in
             let controller = ChatMessageController()
-            print("BOT send: \(controller.makeMessageBot().text)")
-            ws.send(controller.makeJsonMessageBot())
+            print("BOT send reply")
+            ws.send(controller.makeRandonChatMessage())
         }
     }
 }

@@ -17,4 +17,9 @@ final class ChatMessageController {
         let json = try! JSONEncoder().encode(makeMessageBot())
         return json
     }
+
+    func makeRandonChatMessage() -> Data {
+        let json = try! JSONEncoder().encode(RandomChatMessage.radomizeMessage())
+        return json
+    }
 }
